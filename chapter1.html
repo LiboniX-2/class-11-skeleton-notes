@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Computer Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            animation: fadeIn 1.5s;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .menu a:hover {
+            background-color: #357ABD;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #4A90E2;
+            border-bottom: 2px solid #4A90E2;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            animation: fadeInUp 1s;
+        }
+        p {
+            line-height: 1.8;
+            margin: 15px 0;
+            animation: fadeIn 1s;
+        }
+        .figure {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .figure img {
+            max-width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .figure img:hover {
+            transform: scale(1.05);
+        }
+        .quiz {
+            background-color: #e9f5ff;
+            border-left: 5px solid #4A90E2;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            animation: fadeIn 1s;
+        }
+        .quiz h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #0056b3;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chapter 1: Computer Systems</h1>
+        <nav>
+            <ul class="menu">
+                <a href="index.html">About Me</a>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="chapter1.html">Chapter 1</a></li>
+                <li><a href="chapter2.html">Chapter 2</a></li>
+                <li><a href="chapter3.html">Chapter 3</a></li>
+                <li><a href="chapter4.html">Chapter 4</a></li>
+                <li><a href="chapter5.html">Chapter 5</a></li>
+                <li><a href="chapter6.html">Chapter 6</a></li>
+                <li><a href="chapter7.html">Chapter 7</a></li>
+                <li><a href="chapter8.html">Chapter 8</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction to Computer Systems</h2>
+            <p>A computer system is an integrated set of components for processing data. It includes hardware, software, and peripheral devices that work together to perform tasks.</p>
+        </section>
+
+        <section class="figure">
+            <img src="computer-system-architecture.png" alt="Computer System Architecture">
+        </section>
+
+        <section>
+            <h2>Components of a Computer System</h2>
+            <p>Understanding the main components of a computer system is crucial. Here are the key parts:</p>
+            <ul>
+                <li><strong>Central Processing Unit (CPU):</strong> The brain of the computer that performs calculations and executes instructions.</li>
+                <li><strong>Memory:</strong> Temporary storage (RAM) for data and instructions that the CPU needs while performing tasks.</li>
+                <li><strong>Storage:</strong> Long-term data storage, such as hard drives (HDD) or solid-state drives (SSD).</li>
+                <li><strong>Input Devices:</strong> Tools for entering data into the computer, like keyboards and mice.</li>
+                <li><strong>Output Devices:</strong> Equipment that outputs data, such as monitors and printers.</li>
+            </ul>
+        </section>
+
+        <section class="figure">
+            <img src="computer-components.png" alt="Computer Components">
+        </section>
+
+        <section>
+            <h2>Types of Computer Systems</h2>
+            <p>Different types of computer systems serve various purposes:</p>
+            <ul>
+                <li><strong>Personal Computers:</strong> Designed for individual use, suitable for tasks like browsing and gaming.</li>
+                <li><strong>Workstations:</strong> More powerful than personal computers, used for tasks requiring high performance, like graphic design or scientific computations.</li>
+                <li><strong>Servers:</strong> Provide resources, data, and services to other computers over a network.</li>
+                <li><strong>Mainframes:</strong> Large and powerful systems used for bulk data processing and critical applications.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Real-World Applications</h2>
+            <p>Computer systems are used in various fields, such as:</p>
+            <ul>
+                <li><strong>Healthcare:</strong> Patient management systems, diagnostics, and research.</li>
+                <li><strong>Education:</strong> E-learning platforms and administrative systems.</li>
+                <li><strong>Finance:</strong> Online banking systems and trading platforms.</li>
+                <li><strong>Entertainment:</strong> Video games, streaming services, and social media platforms.</li>
+            </ul>
+        </section>
+
+        <section class="quiz">
+            <h3>Knowledge Check</h3>
+            <p>Test your understanding of computer systems with these questions:</p>
+            <ul>
+                <li>1. What are the main functions of the CPU?</li>
+                <li>2. Describe the difference between RAM and storage.</li>
+                <li>3. List the types of computer systems and their primary uses.</li>
+                <li>4. How do input and output devices interact with a computer system?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+            <p>Understanding computer systems is essential for anyone in the field of technology. Mastery of these concepts prepares you for more advanced topics in computer science.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CLass 11 skeleton notes of computer</p>
+    </footer>
+</body>
+</html>

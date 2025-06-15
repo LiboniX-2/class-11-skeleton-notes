@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Number Systems, Conversion, and Boolean Logic</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            animation: fadeIn 1.5s;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .menu a:hover {
+            background-color: #357ABD;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #4A90E2;
+            border-bottom: 2px solid #4A90E2;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            animation: fadeInUp 1s;
+        }
+        p {
+            line-height: 1.8;
+            margin: 15px 0;
+            animation: fadeIn 1s;
+        }
+        .figure {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .figure img {
+            max-width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .figure img:hover {
+            transform: scale(1.05);
+        }
+        .quiz {
+            background-color: #e9f5ff;
+            border-left: 5px solid #4A90E2;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            animation: fadeIn 1s;
+        }
+        .quiz h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #0056b3;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chapter 2: Number Systems, Conversion, and Boolean Logic</h1>
+        <nav>
+            <ul class="menu">
+                <a href="index.html">About Me</a>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="chapter1.html">Chapter 1</a></li>
+                <li><a href="chapter2.html">Chapter 2</a></li>
+                <li><a href="chapter3.html">Chapter 3</a></li>
+                <li><a href="chapter4.html">Chapter 4</a></li>
+                <li><a href="chapter5.html">Chapter 5</a></li>
+                <li><a href="chapter6.html">Chapter 6</a></li>
+                <li><a href="chapter7.html">Chapter 7</a></li>
+                <li><a href="chapter8.html">Chapter 8</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Understanding Number Systems</h2>
+            <p>Number systems are essential for representing data in computing. The most commonly used systems include:</p>
+            <ul>
+                <li><strong>Decimal (Base 10):</strong> The standard system using digits 0-9.</li>
+                <li><strong>Binary (Base 2):</strong> The system used by computers, utilizing only 0 and 1.</li>
+                <li><strong>Octal (Base 8):</strong> Uses digits 0-7.</li>
+                <li><strong>Hexadecimal (Base 16):</strong> Combines digits 0-9 and letters A-F.</li>
+            </ul>
+        </section>
+
+        <section class="figure">
+            <img src="number-systems-diagram.png" alt="Different Number Systems">
+        </section>
+
+        <section>
+            <h2>Conversions Between Number Systems</h2>
+            <p>Converting between different bases is crucial in computer science. Here’s how to convert a decimal number to binary:</p>
+            <h3>Decimal to Binary Conversion</h3>
+            <p>Divide the decimal number by 2 and record the remainder. Repeat until the quotient is 0.</p>
+            <h3>Example:</h3>
+            <p>Convert 13 to binary:</p>
+            <ul>
+                <li>13 ÷ 2 = 6, Remainder = 1</li>
+                <li>6 ÷ 2 = 3, Remainder = 0</li>
+                <li>3 ÷ 2 = 1, Remainder = 1</li>
+                <li>1 ÷ 2 = 0, Remainder = 1</li>
+            </ul>
+            <p>Reading the remainders from bottom to top, 13 in decimal is <strong>1101</strong> in binary.</p>
+        </section>
+
+        <section class="figure">
+            <img src="conversion-example.png" alt="Conversion Example">
+        </section>
+
+        <section>
+            <h2>Boolean Logic</h2>
+            <p>Boolean logic underpins many computer processes. It involves true and false values and key operations:</p>
+            <ul>
+                <li><strong>AND:</strong> True if both operands are true (A & B).</li>
+                <li><strong>OR:</strong> True if at least one operand is true (A | B).</li>
+                <li><strong>NOT:</strong> Inverts the value (¬A).</li>
+            </ul>
+            <h3>Truth Tables</h3>
+            <p>Truth tables are used to demonstrate the behavior of Boolean operations:</p>
+            <table>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>A AND B</th>
+                    <th>A OR B</th>
+                    <th>NOT A</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="figure">
+            <img src="boolean-logic.png" alt="Boolean Logic Operations">
+        </section>
+
+        <section>
+            <h2>Real-World Applications</h2>
+            <p>Understanding number systems and Boolean logic is vital for:</p>
+            <ul>
+                <li><strong>Programming:</strong> Writing efficient code and algorithms.</li>
+                <li><strong>Digital Electronics:</strong> Designing circuits and systems.</li>
+                <li><strong>Cryptography:</strong> Securing data through encoding techniques.</li>
+            </ul>
+        </section>
+
+        <section class="quiz">
+            <h3>Knowledge Check</h3>
+            <p>Test your understanding of number systems, conversions, and Boolean logic:</p>
+            <ul>
+                <li>1. Convert the decimal number 25 to binary.</li>
+                <li>2. What is the result of the Boolean expression A AND (B OR C) when A is true?</li>
+                <li>3. Explain the difference between binary and hexadecimal number systems.</li>
+                <li>4. Provide a real-world example where number conversion is necessary.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+            <p>Mastering number systems, conversions, and Boolean logic is essential for aspiring computer scientists and engineers. These concepts form the foundation for more advanced topics in computing.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CLass 11 skeleton notes of computer</p>
+    </footer>
+</body>
+</html>

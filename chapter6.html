@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Web Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            animation: fadeIn 1.5s;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .menu a:hover {
+            background-color: #357ABD;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #4A90E2;
+            border-bottom: 2px solid #4A90E2;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            animation: fadeInUp 1s;
+        }
+        p {
+            line-height: 1.8;
+            margin: 15px 0;
+            animation: fadeIn 1s;
+        }
+        .figure {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .figure img {
+            max-width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .figure img:hover {
+            transform: scale(1.05);
+        }
+        .quiz {
+            background-color: #e9f5ff;
+            border-left: 5px solid #4A90E2;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            animation: fadeIn 1s;
+        }
+        .quiz h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #0056b3;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chapter 6: Web Technology</h1>
+        <nav>
+            <ul class="menu">
+                <a href="index.html">About Me</a>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="chapter1.html">Chapter 1</a></li>
+                <li><a href="chapter2.html">Chapter 2</a></li>
+                <li><a href="chapter3.html">Chapter 3</a></li>
+                <li><a href="chapter4.html">Chapter 4</a></li>
+                <li><a href="chapter5.html">Chapter 5</a></li>
+                <li><a href="chapter6.html">Chapter 6</a></li>
+                <li><a href="chapter7.html">Chapter 7</a></li>
+                <li><a href="chapter8.html">Chapter 8</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction to Web Technology</h2>
+            <p>Web technology encompasses the tools, languages, and protocols used to create and manage websites and web applications. It plays a crucial role in how we interact with information online.</p>
+        </section>
+
+        <section class="figure">
+            <img src="web-technology-intro.png" alt="Introduction to Web Technology">
+        </section>
+
+        <section>
+            <h2>Core Technologies</h2>
+            <p>The core technologies of web development include:</p>
+            <ul>
+                <li><strong>HTML (HyperText Markup Language):</strong> The standard language for creating web pages.</li>
+                <li><strong>CSS (Cascading Style Sheets):</strong> Used for styling and layout of web pages.</li>
+                <li><strong>JavaScript:</strong> A programming language that enables interactive web content.</li>
+            </ul>
+        </section>
+
+        <section class="figure">
+            <img src="html-css-js.png" alt="HTML, CSS, and JavaScript">
+        </section>
+
+        <section>
+            <h2>HTML Basics</h2>
+            <p>HTML is the backbone of any web page. It uses tags to define elements such as headings, paragraphs, links, and images.</p>
+            <h3>Example of Basic HTML Structure:</h3>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <section class="figure">
+            <img src="html-example.png" alt="Basic HTML Example">
+        </section>
+
+        <section>
+            <h2>CSS Basics</h2>
+            <p>CSS is used for styling HTML elements. It allows you to change the appearance of web pages, including layout, colors, and fonts.</p>
+            <h3>Example of CSS Styling:</h3>
+            <pre><code>body {
+    background-color: #f0f4f8;
+}
+h1 {
+    color: #0056b3;
+}
+p {
+    font-size: 16px;
+}</code></pre>
+        </section>
+
+        <section class="figure">
+            <img src="css-example.png" alt="CSS Styling Example">
+        </section>
+
+        <section>
+            <h2>JavaScript Basics</h2>
+            <p>JavaScript brings interactivity to web pages. It allows for dynamic content updates, form validation, and much more.</p>
+            <h3>Example of JavaScript Code:</h3>
+            <pre><code>function greet() {
+    alert("Hello, welcome to my website!");
+}
+&lt;button onclick="greet()"&gt;Click Me&lt;/button&gt;</code></pre>
+        </section>
+
+        <section class="figure">
+            <img src="javascript-example.png" alt="JavaScript Example">
+        </section>
+
+        <section>
+            <h2>Real-World Applications of Web Technology</h2>
+            <p>Web technologies are used in various domains:</p>
+            <ul>
+                <li><strong>eCommerce:</strong> Websites like Amazon and eBay use web technologies for online shopping.</li>
+                <li><strong>Social Media:</strong> Platforms like Facebook and Twitter rely on web technologies for user interaction.</li>
+                <li><strong>Content Management Systems (CMS):</strong> WordPress and Joomla help users create and manage content easily.</li>
+                <li><strong>Web Applications:</strong> Services like Google Docs and Trello utilize web technologies for collaborative tools.</li>
+            </ul>
+        </section>
+
+        <section class="figure">
+            <img src="web-applications.png" alt="Web Applications">
+        </section>
+
+        <section class="quiz">
+            <h3>Knowledge Check</h3>
+            <p>Test your understanding of web technology:</p>
+            <ul>
+                <li>1. What are the three core technologies of web development?</li>
+                <li>2. Describe the purpose of HTML in web development.</li>
+                <li>3. How does CSS enhance the presentation of web pages?</li>
+                <li>4. Provide an example of how JavaScript can be used on a web page.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+            <p>Web technology is foundational for creating and managing online content. Understanding these concepts is essential for anyone looking to pursue a career in web development or related fields.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;  2025 CLass 11 skeleton notes of computer </p>
+    </footer>
+</body>
+</html>

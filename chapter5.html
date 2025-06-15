@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Programming Concepts and Logics</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            animation: fadeIn 1.5s;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .menu a:hover {
+            background-color: #357ABD;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #4A90E2;
+            border-bottom: 2px solid #4A90E2;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            animation: fadeInUp 1s;
+        }
+        p {
+            line-height: 1.8;
+            margin: 15px 0;
+            animation: fadeIn 1s;
+        }
+        .figure {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .figure img {
+            max-width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .figure img:hover {
+            transform: scale(1.05);
+        }
+        .quiz {
+            background-color: #e9f5ff;
+            border-left: 5px solid #4A90E2;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            animation: fadeIn 1s;
+        }
+        .quiz h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #0056b3;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chapter 5: Programming Concepts and Logics</h1>
+        <nav>
+            <ul class="menu">
+                <a href="index.html">About Me</a>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="chapter1.html">Chapter 1</a></li>
+                <li><a href="chapter2.html">Chapter 2</a></li>
+                <li><a href="chapter3.html">Chapter 3</a></li>
+                <li><a href="chapter4.html">Chapter 4</a></li>
+                <li><a href="chapter5.html">Chapter 5</a></li>
+                <li><a href="chapter6.html">Chapter 6</a></li>
+                <li><a href="chapter7.html">Chapter 7</a></li>
+                <li><a href="chapter8.html">Chapter 8</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction to Programming Concepts</h2>
+            <p>Programming is the process of creating a set of instructions that a computer can follow to perform specific tasks. Understanding programming concepts is crucial for developing effective software solutions.</p>
+        </section>
+
+        <section class="figure">
+            <img src="programming-introduction.png" alt="Introduction to Programming">
+        </section>
+
+        <section>
+            <h2>Fundamental Programming Concepts</h2>
+            <p>Here are some key concepts in programming:</p>
+            <ul>
+                <li><strong>Variables:</strong> Used to store data values. Example: <code>int age = 25;</code></li>
+                <li><strong>Data Types:</strong> Specifies the type of data a variable can hold, such as integers, strings, and booleans.</li>
+                <li><strong>Control Structures:</strong> Direct the flow of execution in a program (e.g., loops and conditionals).</li>
+                <li><strong>Functions:</strong> Reusable blocks of code that perform a specific task.</li>
+            </ul>
+        </section>
+
+        <section class="figure">
+            <img src="programming-concepts.png" alt="Programming Concepts">
+        </section>
+
+        <section>
+            <h2>Logic in Programming</h2>
+            <p>Logic is essential in programming for making decisions. It involves using conditions to control the flow of a program:</p>
+            <h3>Logical Operators:</h3>
+            <ul>
+                <li><strong>AND (&&):</strong> True if both operands are true.</li>
+                <li><strong>OR (||):</strong> True if at least one operand is true.</li>
+                <li><strong>NOT (!):</strong> Inverts the boolean value.</li>
+            </ul>
+            <h3>Example of Conditional Statements:</h3>
+            <p>Using an if-else statement:</p>
+            <pre><code>if (age &gt; 18) {
+    console.log("Adult");
+} else {
+    console.log("Minor");
+}</code></pre>
+        </section>
+
+        <section class="figure">
+            <img src="logic-in-programming.png" alt="Logic in Programming">
+        </section>
+
+        <section>
+            <h2>Real-World Applications of Programming</h2>
+            <p>Programming concepts are applied in various domains:</p>
+            <ul>
+                <li><strong>Web Development:</strong> Creating websites and web applications using languages like HTML, CSS, and JavaScript.</li>
+                <li><strong>Data Analysis:</strong> Using programming languages like Python and R to analyze and visualize data.</li>
+                <li><strong>Mobile Applications:</strong> Developing apps for smartphones using Swift (iOS) and Kotlin (Android).</li>
+                <li><strong>Game Development:</strong> Creating video games using languages like C# and C++.</li>
+            </ul>
+        </section>
+
+        <section class="quiz">
+            <h3>Knowledge Check</h3>
+            <p>Test your understanding of programming concepts and logic:</p>
+            <ul>
+                <li>1. What is the purpose of a variable in programming?</li>
+                <li>2. Explain the difference between conditional statements and loops.</li>
+                <li>3. Provide an example of a logical operator and describe its function.</li>
+                <li>4. How are functions useful in programming?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+            <p>Understanding programming concepts and logic is fundamental for anyone pursuing a career in technology. Mastering these skills opens up numerous opportunities in software development and related fields.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CLass 11 skeleton notes of computer</p>
+    </footer>
+</body>
+</html>

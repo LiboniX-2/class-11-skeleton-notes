@@ -15,7 +15,7 @@ Download the Repository:
 Click the green "Code" button on this page and select "Download ZIP."
 Open the Website:
 Navigate to the extracted folder.
-Open homepage.html in your favorite web browser.
+Open index.html in your favorite web browser.
 🛠️ Usage
 Browse through the sections to find notes on various subjects.
 Use the notes to enhance your understanding and prepare for exams.
@@ -27,5 +27,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 📬 Contact
 For questions or feedback, feel free to reach out:
+
 Your Name: prasiddha.mainali2@gmail.com
 GitHub: LiboniX-2
